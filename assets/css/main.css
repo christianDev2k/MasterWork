@@ -55,13 +55,26 @@
     color: var(--text-color);
 }
 
+.header__content .search__btn:hover i {
+    color: var(--title-color);
+}
+
 /* Search modal  */
 .header__content #searchModal {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.header__content .search__btn:hover i {
-    color: var(--title-color);
+.search__dropdown .search__content {
+    background-color: var(--bg-color);
+}
+
+.search__dropdown button {
+    background-color: var(--primary);
+}
+
+.search__dropdown input:focus {
+    box-shadow: none;
+    color: var(--text-color);
 }
 
 /* Dropdown icon  */
@@ -132,13 +145,4 @@
 #dropdownNavbar ul li {
     margin-left: 0;
     padding: 0 24px 14px;
-}
-
-.search__dropdown button {
-    background-color: var(--primary);
-    border: none;
-}
-
-.search__dropdown input:focus {
-    box-shadow: none;
 }
