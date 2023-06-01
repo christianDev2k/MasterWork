@@ -1,7 +1,7 @@
 :root {
     --white: #fff;
     --black: #000;
-    --primary: #dc4f72; 
+    --primary: #dc4f72;
 
     --bg-color: #fff;
     --title-color: #2C3038;
@@ -25,7 +25,8 @@
     -webkit-box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-family: 'Nunito', sans-serif;
 }
 
@@ -37,7 +38,7 @@ html, body {
     color: var(--primary);
     font-weight: 700;
     font-size: 14px;
-    background-color: var(--white);
+    background-color: transparent;
     transition: all .5s;
 }
 
@@ -45,4 +46,3 @@ html, body {
     background-color: var(--primary);
     color: var(--white);
 }
-

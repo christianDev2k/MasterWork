@@ -1,3 +1,4 @@
+/* Header  */
 .header__content {
     background-color: var(--bg-color);
     height: 90px;
@@ -5,6 +6,7 @@
     padding: 15px;
 }
 
+/* Logo  */
 .header__brand {
     color: var(--primary);
     font-size: 26px;
@@ -12,6 +14,7 @@
     font-weight: 700;
 }
 
+/* Navbar list  */
 .navbar__list li {
     margin-left: 30px;
     padding: 8px 0;
@@ -42,6 +45,7 @@
     width: 20px;
 }
 
+/* Search button  */
 .header__content .search__btn {
     margin: 0 15px;
     width: 40px;
@@ -51,19 +55,44 @@
     color: var(--text-color);
 }
 
+/* Search modal  */
+.header__content #searchModal {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .header__content .search__btn:hover i {
     color: var(--title-color);
 }
 
+/* Dropdown icon  */
 .navbar__list .dropdown-icon {
     position: relative;
-    top: 2px
+    top: 1px;
+    color: var(--title-color);
 }
 
+.navbar__list .dropdown-icon.active {
+    color: var(--primary);
+}
+
+/* Dark / light icon  */
 .theme-btn {
     color: var(--title-color);
 }
 
+.theme-btn i {
+    display: none;
+}
+
+.theme-btn.light .light {
+    display: block;
+}
+
+.theme-btn.dark .dark {
+    display: block;
+}
+
+/* Toggle button  */
 .header__content .navbar__toggler {
     background-color: var(--primary);
     color: var(--white);
@@ -76,6 +105,7 @@
     border-color: #aaa #bbb #bbb;
 }
 
+/* Dropdown navbar  */
 #dropdownNavbar ul {
     padding: 16px 0 5px;
     background-color: var(--bg-color);
@@ -102,4 +132,13 @@
 #dropdownNavbar ul li {
     margin-left: 0;
     padding: 0 24px 14px;
+}
+
+.search__dropdown button {
+    background-color: var(--primary);
+    border: none;
+}
+
+.search__dropdown input:focus {
+    box-shadow: none;
 }

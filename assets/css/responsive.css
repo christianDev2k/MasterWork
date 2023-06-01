@@ -1,4 +1,4 @@
-@media screen and (max-width: 1023.98px) {
+@media screen and (max-width: 1024px) {
     .header__content {
         height: auto;
     }
@@ -12,8 +12,19 @@
         margin-right: auto;
     }
 
-
     #dropdownNavbar ul {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        padding: 12px 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header__brand {
+        font-size: 20px;
     }
 }

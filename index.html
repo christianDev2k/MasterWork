@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MasterWork</title>
 
     <!-- Google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -21,37 +21,37 @@
 
     <!-- Flowbite framework -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
     <!-- Tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Base CSS  -->
-    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/base.css" />
 
     <!-- Main CSS  -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
 
     <!-- Responsive CSS  -->
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 </head>
 
 <body>
     <!-- Header  -->
     <header>
-        <nav class="header__content flex items-center flex-wrap">
-            <div class="max-w-screen-xl w-full flex flex-wrap items-center mx-auto px-4">
+        <nav class="header__content flex items-center flex-wrap transition">
+            <div class="max-w-screen-xl w-full flex flex-wrap items-center mx-auto">
                 <!-- Logo  -->
                 <a href="#" class="header__brand flex items-center">
                     <i class="fa-regular fa-handshake mr-1"></i>
-                    <h1>MasterWork</h1>
+                    <h1>Masterwork</h1>
                 </a>
 
                 <!-- Theme mode  -->
                 <div class="ml-auto lg:ml-4 lg:order-last">
-                    <button class="theme-btn -rotate-12 text-2xl">
-                        <i class="fa-regular fa-moon"></i>
-                        <i class="fa-regular fa-sun hidden"></i>
+                    <button class="theme-btn light text-xl lg:text-2xl -rotate-12 text-2xl">
+                        <i class="light fa-regular fa-moon relative top-1"></i>
+                        <i class="dark fa-regular fa-sun relative top-1"></i>
                     </button>
                 </div>
 
@@ -59,62 +59,85 @@
                 <button data-collapse-toggle="navbarContent" type="button"
                     class="navbar__toggler inline-flex items-center ml-3 lg:hidden" aria-controls="navbarContent"
                     aria-expanded="false">
-                    <svg class="w-8 h-8" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
+                    <i class="sm:text-xl md:text-2xl px-1 fa-solid fa-bars"></i>
                 </button>
 
                 <!-- Navbar list  -->
                 <div class="hidden ml-auto w-full lg:flex items-center text-center lg:w-auto" id="navbarContent">
                     <ul class="navbar__list flex flex-col py-5 lg:py-0 lg:flex-row text-center">
                         <li>
-                            <a href="#" class="block nav__link active" aria-current="page">Home
-                            </a>
+                            <a href="#" class="block nav__link navLink active" aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="block nav__link">About</a>
+                            <a href="#" class="block nav__link navLink">About</a>
                         </li>
                         <li>
-                            <a href="#" class="block nav__link">Services</a>
+                            <a href="#" class="block nav__link navLink">Services</a>
                         </li>
-                        <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="nav__link">
+                        <li class="flex items-center">
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="nav__link grow">
                                 Pages
                             </button>
-                            <svg class="w-5 h-5 inline-block" aria-hidden="true" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
+                            <i class="dropdown-icon fa-solid fa-angle-down text-xs lg:ml-1"></i>
                             <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="z-10 hidden w-full lg:w-auto px-11">
-                                <ul class="text-center lg:text-left lg:w-44 shadow-xl" aria-labelledby="dropdownLargeButton">
+                            <div id="dropdownNavbar" class="z-10 hidden w-full lg:w-auto px-6">
+                                <ul class="text-center lg:text-left lg:w-44 shadow-xl"
+                                    aria-labelledby="dropdownLargeButton">
                                     <li>
-                                        <a href="#" class="block nav__link">Blog Posts</a>
+                                        <a href="#" data-id="dropdownNavbarLink"
+                                            class="block nav__link navDropdown">Blog Posts</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="block nav__link">Landing Page</a>
+                                        <a href="#" data-id="dropdownNavbarLink"
+                                            class="block nav__link navDropdown">Landing Page</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="block nav__link">404 Page</a>
+                                        <a href="#" data-id="dropdownNavbarLink" class="block nav__link navDropdown">404
+                                            Page</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li>
-                            <a href="#" class="block nav__link">Contact</a>
+                            <a href="#" class="block nav__link navLink">Contact</a>
                         </li>
                     </ul>
 
                     <!-- Search btn  -->
-                    <button class="search__btn rounded-full flex items-center justify-center">
+                    <button class="search__btn rounded-full flex items-center justify-center" type="button"
+                        data-modal-target="searchModal" data-modal-toggle="searchModal">
                         <i class="fa-solid fa-magnifying-glass text-sm transition"></i>
                     </button>
-                    
+                    <!-- Search modal -->
+                    <div id="searchModal" tabindex="-1" aria-hidden="true"
+                        class="fixed top-0 left-0 right-0 bottom-0 z-50 hidden md:inset-0">
+                        <div class="relative w-full max-w-xl max-h-full">
+                            <!-- Modal content -->
+                            <div class="relative">
+                                <!-- Modal header -->
+                                <div class="flex mb-8">
+                                    <button type="button"
+                                        class="ml-auto right-0 text-2xl font-bold text-white opacity-75 hover:opacity-100 transition"
+                                        data-modal-hide="searchModal">
+                                        <i class="fa-solid fa-xmark "></i>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="search__dropdown">
+                                    <form>
+                                        <div class="flex items-center w-full bg-white rounded-md overflow-hidden">
+                                            <input type="search" class="bg-transparent border-0 grow px-5"
+                                                placeholder="Enter Keyword" required />
+                                            <button type="submit" class="py-4 px-6 text-white">
+                                                Search
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Button  -->
                     <button class="btn mt-2.5 lg:mt-0">SCHEDULE A DEMO</button>
@@ -124,7 +147,9 @@
     </header>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+    <!-- INMPORT -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
