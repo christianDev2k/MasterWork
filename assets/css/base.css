@@ -1,0 +1,48 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --primary: #dc4f72; 
+
+    --bg-color: #fff;
+    --title-color: #2C3038;
+    --light-bg-color: #F7F9FC;
+    --border-color: #eee;
+    --text-color: #5a5a5a;
+}
+
+[data-theme="dark"] {
+    --bg-color: #131617;
+    --title-color: #eee;
+    --light-bg-color: #191c1d;
+    --border-color: #333;
+    --text-color: #b7b7b7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Buttton  */
+.btn {
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    padding: 15px 30px;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 14px;
+    background-color: var(--white);
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+

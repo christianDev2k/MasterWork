@@ -1,0 +1,19 @@
+@media screen and (max-width: 1023.98px) {
+    .header__content {
+        height: auto;
+    }
+
+    .navbar__list li {
+        margin-left: 0;
+    }
+
+    .header__content .search__btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    #dropdownNavbar ul {
+        width: 100%;
+    }
+}

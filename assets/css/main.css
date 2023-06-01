@@ -1,0 +1,105 @@
+.header__content {
+    background-color: var(--bg-color);
+    height: 90px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+}
+
+.header__brand {
+    color: var(--primary);
+    font-size: 26px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.navbar__list li {
+    margin-left: 30px;
+    padding: 8px 0;
+}
+
+.header__content .nav__link {
+    color: var(--title-color);
+    transition: all .5s;
+    position: relative;
+}
+
+.header__content .nav__link:hover,
+.header__content .nav__link.active {
+    color: var(--primary);
+}
+
+.header__content .nav__link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--primary);
+    transition: all .5s;
+}
+
+.header__content .nav__link:hover::before {
+    width: 20px;
+}
+
+.header__content .search__btn {
+    margin: 0 15px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.header__content .search__btn:hover i {
+    color: var(--title-color);
+}
+
+.navbar__list .dropdown-icon {
+    position: relative;
+    top: 2px
+}
+
+.theme-btn {
+    color: var(--title-color);
+}
+
+.header__content .navbar__toggler {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 2px;
+    border: 2px solid transparent;
+}
+
+.header__content .navbar__toggler:focus {
+    border-color: #aaa #bbb #bbb;
+}
+
+#dropdownNavbar ul {
+    padding: 16px 0 5px;
+    background-color: var(--bg-color);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+#dropdownNavbar ul::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: var(--bg-color);
+    border-left: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+    transform: translateX(-50%) rotateZ(45deg);
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    z-index: 1001;
+}
+
+#dropdownNavbar ul li {
+    margin-left: 0;
+    padding: 0 24px 14px;
+}
