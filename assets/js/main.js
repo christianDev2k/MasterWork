@@ -45,3 +45,12 @@ navDropdown.forEach(function (item) {
 
 // COUNT UP
 $('.counter').countUp();
+
+// FAQ according
+const faqButton = document.querySelectorAll('.faq__button');
+faqButton.forEach(function (button) {
+	button.addEventListener('click', function (e) {
+		let element = e.target.dataset.id;
+		document.getElementById(element).classList.toggle('showText');
+	});
+});

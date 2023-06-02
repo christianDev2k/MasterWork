@@ -3,6 +3,7 @@
     background-color: var(--bg-color);
     height: 90px;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    transition: all .5s ease-in;
 }
 
 /* Logo  */
@@ -290,4 +291,83 @@
 .jumbotron .btn:hover {
     background-color: #e2e6ea;
     border-color: #dae0e5;
+}
+
+/* FAQ  */
+.faq {
+    background-color: var(--light-bg-color);
+    transition: all .5s ease-in;
+}
+
+.faq img {
+    transition: all .3s ease-in;
+}
+
+.faq img:hover {
+    transform: translateY(-0.5rem);
+}
+
+.accordion__content {
+    background-color: var(--bg-color);
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    transition: all .5s ease-in;
+}
+
+.accordion__content button {
+    color: var(--title-color);
+    position: relative;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.accordion__content button i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    color: var(--title-color);
+}
+
+.accordion__content button i::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 3px;
+    height: 9px;
+    background-color: var(--title-color);
+    transform: rotate(45deg) translate(3px);
+}
+
+.accordion__content button i::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 3px;
+    height: 9px;
+    background-color: var(--title-color);
+    transform: rotate(-45deg) translate(-3px);
+}
+
+.accordion__content p {
+    display: none;
+}
+
+.accordion__content.showText p {
+    display: block;
+    color: var(--text-color);
+    animation: passageFadeIn .2s ease-in;
+}
+
+@keyframes passageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
