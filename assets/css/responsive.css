@@ -1,4 +1,6 @@
 @media screen and (max-width: 1024px) {
+
+    /* Header  */
     .header__content {
         height: auto;
     }
@@ -15,6 +17,24 @@
     #dropdownNavbar ul {
         width: 100%;
     }
+
+    .header__theme {
+        margin-left: auto;
+    }
+
+    /* Carousel  */
+    .carousel {
+        margin-top: 70px;
+    }
+
+    /* About  */
+    .about__card h5 {
+        font-size: 18px;
+    }
+
+    .about__card .about__num {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -23,8 +43,32 @@
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 640px) {
+
+    /* Header  */
     .header__brand {
         font-size: 20px;
+    }
+
+    .carousel__left h1 {
+        font-size: 40px;
+    }
+
+    /* About  */
+    .about__card {
+        margin-top: 24px;
+    }
+
+    .about__card h5 {
+        font-size: 17px;
+    }
+
+    /* JUMBOTRON  */
+    .jumbotron h1 {
+        font-size: 26px;
+    }
+
+    .jumbotron p {
+        font-size: 15px;
     }
 }

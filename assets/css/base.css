@@ -8,6 +8,9 @@
     --light-bg-color: #F7F9FC;
     --border-color: #eee;
     --text-color: #5a5a5a;
+
+    --card-box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+    --card-hover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09)
 }
 
 [data-theme="dark"] {
@@ -28,6 +31,7 @@
 html,
 body {
     font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
 }
 
 /* Buttton  */
@@ -35,14 +39,55 @@ body {
     border: 1px solid var(--primary);
     border-radius: 4px;
     padding: 15px 30px;
-    color: var(--primary);
     font-weight: 700;
     font-size: 14px;
-    background-color: transparent;
     transition: all .5s;
 }
 
-.btn:hover {
+.btn--primary {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.btn--primary:hover {
     background-color: var(--primary);
     color: var(--white);
+}
+
+.btn--secondary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn--secondary:hover {
+    background-color: #d62f58;
+}
+
+
+
+/* Section heading  */
+.section-heading {
+    max-width: 750px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-heading h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.section-heading h3 {
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.section-heading p {
+    margin: 15px 0;
+    color: var(--text-color);
 }

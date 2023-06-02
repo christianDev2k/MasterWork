@@ -38,8 +38,8 @@
 
 <body>
     <!-- Header  -->
-    <header>
-        <nav class="header__content flex items-center flex-wrap transition">
+    <header class="fixed z-10 top-0 left-0 right-0">
+        <nav class="header__content flex items-center flex-wrap transition p-4">
             <div class="max-w-screen-xl w-full flex flex-wrap items-center mx-auto">
                 <!-- Logo  -->
                 <a href="#" class="header__brand flex items-center">
@@ -48,7 +48,7 @@
                 </a>
 
                 <!-- Theme mode  -->
-                <div class="lg:ml-4 ml-auto lg:order-last">
+                <div class="header__theme lg:order-last">
                     <button class="theme-btn light text-xl lg:text-2xl -rotate-12 text-2xl">
                         <i class="light fa-regular fa-moon relative top-1"></i>
                         <i class="dark fa-regular fa-sun relative top-1"></i>
@@ -111,10 +111,10 @@
                     </button>
                     <!-- Search modal -->
                     <div id="searchModal" tabindex="-1" aria-hidden="true"
-                        class="fixed top-0 left-0 right-0 bottom-0 z-50 hidden md:inset-0">
+                        class="fixed top-0 left-0 right-0 bottom-0 z-100 hidden md:inset-0">
                         <div class="relative w-full max-w-xl max-h-full px-4">
                             <!-- Modal content -->
-                            <div class="relative">
+                            <div class="relative z-50">
                                 <!-- Modal header -->
                                 <div class="flex mb-8">
                                     <button type="button"
@@ -141,15 +141,138 @@
                     </div>
 
                     <!-- Button  -->
-                    <button class="btn mt-2.5 lg:mt-0">SCHEDULE A DEMO</button>
+                    <button class="btn btn--primary mt-2.5 lg:mt-0">SCHEDULE A DEMO</button>
                 </div>
             </div>
         </nav>
     </header>
 
+    <!-- Carousel  -->
+    <section class="carousel relative">
+        <div class="flex flex-col lg:flex lg:flex-row max-w-screen-xl mx-auto px-4">
+            <div class="w-full lg:w-1/2 flex items-center">
+                <div class="carousel__left relative">
+                    <h1 class="carousel__heading font-bold">We Execute Our Ideas From Start to Finish</h1>
+                    <p class="mt-4 mb-12 m">Building a beautiful interactive business for startups and innovative
+                        companies.</p>
+                    <button class="btn btn--primary">GET STARTED</button>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 mt-12 lg:mt-0">
+                <img src="./assets/img/carousel.png" alt="" class="relative">
+            </div>
+        </div>
+    </section>
 
+    <!-- Tool  -->
+    <section class="tool py-12">
+        <div class="max-w-screen-xl mx-auto px-4 py-4">
+            <div class="section-heading">
+                <h6>WHY CHOOSE US</h6>
+                <h3>Tools for business startup to professional</h3>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
+                    dapibus nunc, ut
+                    rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+            </div>
+            <div class="section-body">
+                <div class="gap-x-8 grid-cols-2 md:grid lg:grid-cols-3 ">
+                    <a href="#" class="tool__card text-center block py-12 px-8 rounded-md hover:shadow-xl">
+                        <img src="./assets/img/tool-1.png" alt="" class="mx-auto">
+                        <h5 class="my-4">Interactive</h5>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum
+                            perspiciatis?</p>
+                    </a>
+                    <a href="#" class="tool__card text-center block py-12 px-8 rounded-md hover:shadow-xl">
+                        <img src="./assets/img/tool-2.png" alt="" class="mx-auto">
+                        <h5 class="my-4">Business</h5>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum
+                            perspiciatis?</p>
+                    </a>
+                    <a href="#"
+                        class="tool__card col-span-2 lg:col-auto text-center block py-12 px-8 rounded-md hover:shadow-xl">
+                        <img src="./assets/img/tool-3.png" alt="" class="mx-auto">
+                        <h5 class="my-4">Inspiration</h5>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum
+                            perspiciatis?</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About  -->
+    <section class="about py-12">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="md:flex">
+                <div class="md:w-1/2 md:pr-12">
+                    <div class="section-heading mb-12">
+                        <h6>ABOUT OUR COMPANY</h6>
+                        <h3>The Best Choice For Your Successful Business!</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam
+                            nihil totam
+                            reprehenderit!
+                            Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam
+                            esse
+                            nesciunt ea fuga
+                            facere
+                            voluptatem.</p>
+                    </div>
+                    <button class="btn btn--secondary">READ MORE</button>
+                </div>
+                <div class="about__right mt-12 md:mt-0 md:w-1/2 md:pl-12">
+                    <img src="./assets/img/about.jpg" alt="" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+            <div class="sm:grid grid-cols-2 lg:grid-cols-3 pt-6 gap-x-8">
+                <div class="about__card sm:mt-12 rounded-md p-8">
+                    <h5 class="">Happy Customers</h5>
+                    <div class="about__num counter">10458</div>
+                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+                </div>
+                <div class="about__card sm:mt-12 rounded-md p-8">
+                    <h5 class="">Winning Awards</h5>
+                    <div class="about__num counter">890</div>
+                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+                </div>
+                <div class="about__card sm:translate-x-1/2 lg:translate-x-0 sm:mt-12 rounded-md p-8">
+                    <h5 class="">Completed Projects</h5>
+                    <div class="about__num counter">5345</div>
+                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JUMBOTRON  -->
+    <section class="jumbotron bg-center bg-no-repeat flex items-center">
+        <div class="max-w-screen-xl mx-auto px-4 w-full">
+            <div class="jumbotron__content">
+                <h1>
+                    We are true to ourselves, and commit to always perform at our best.</h1>
+                <p class="mt-6 mb-6 md:mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+                    doloribus
+                    atque.
+                    Corrupti exercitationem
+                    voluptatem ipsum iste consequuntur et vitae voluptas temporibus? Maxime dolores amet voluptatum illo
+                    consequatur placeat
+                    fugit ducimus.
+                </p>
+                <a href="#" class="inline-block mt-7 sm:mt-10 md:mt-0 btn btn--secondary">READ MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ  -->
+    <section class="faq">
+
+    </section>
 
     <!-- INMPORT -->
+    <script src="./vendor/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./vendor/jquery.countup.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

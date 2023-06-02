@@ -3,7 +3,6 @@
     background-color: var(--bg-color);
     height: 90px;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
-    padding: 15px;
 }
 
 /* Logo  */
@@ -89,6 +88,10 @@
 }
 
 /* Dark / light icon  */
+.header__theme {
+    margin-left: 16px;
+}
+
 .theme-btn {
     color: var(--title-color);
 }
@@ -145,4 +148,146 @@
 #dropdownNavbar ul li {
     margin-left: 0;
     padding: 0 24px 14px;
+}
+
+/* ======== Carousel ===========*/
+.carousel {
+    margin-top: 90px;
+    padding-top: 80px;
+}
+
+.carousel::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, var(--bg-color), rgba(255, 255, 255, 0.92)), url('../img/banner-carousel.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.carousel__left h1 {
+    font-size: 50px;
+    line-height: 57.5px;
+    color: var(--title-color);
+}
+
+.carousel__left p {
+    max-width: 450px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+/* Tool  */
+.tool__card {
+    color: var(--title-color);
+    background-color: var(--light-bg-color);
+    margin-top: 48px;
+    transition: all .3s ease-in;
+}
+
+.tool__card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: var(--card-box-shadow);
+}
+
+.tool__card h5 {
+    margin: 16px 0;
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.tool__card p {
+    color: var(--text-color);
+}
+
+/* About  */
+.about {
+    background-color: var(--light-bg-color);
+    transition: all .5s;
+}
+
+.about .section-heading {
+    text-align: left;
+}
+
+.about .section-heading h3 {
+    font-size: 35px;
+}
+
+.about__right img {
+    transition: all .3s ease-in;
+}
+
+.about__right img:hover {
+    transform: translateY(-0.5rem);
+}
+
+.about__card {
+    background-color: var(--bg-color);
+    box-shadow: var(--card-box-shadow);
+    transition: all .5s;
+    border: 1px solid var(--border-color);
+}
+
+.about__card:hover {
+    box-shadow: var(--card-hover-box-shadow);
+}
+
+.about__card h5 {
+    font-weight: 700;
+    line-height: 24.5px;
+    color: var(--title-color);
+}
+
+.about__card .about__num {
+    font-size: 50px;
+    line-height: 1;
+    color: var(--primary);
+    font-weight: 700;
+    margin: 10px 0 15px;
+}
+
+.about__card p {
+    color: var(--text-color);
+}
+
+/* JUMBOTRON  */
+.jumbotron {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
+        url('../img/jumbotron.jpg');
+    background-attachment: fixed;
+    min-height: 480px;
+}
+
+.jumbotron__content {
+    max-width: 550px;
+}
+
+.jumbotron h1 {
+    font-size: 30px;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.jumbotron p {
+    color: var(--white);
+}
+
+.jumbotron .btn {
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #f8f9fa;
+}
+
+.jumbotron .btn:hover {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
 }

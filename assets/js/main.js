@@ -42,3 +42,6 @@ navDropdown.forEach(function (item) {
 		dropdownIcon.classList.add('active');
 	});
 });
+
+// COUNT UP
+$('.counter').countUp();
